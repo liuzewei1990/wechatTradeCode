@@ -1,0 +1,144 @@
+{
+	"pages": [{
+		"path": "pages/main/main",
+		"style": {
+			// #ifdef H5
+			"navigationStyle": "custom",
+			// #endif
+			"navigationBarTitleText": "中付便民"
+		}
+	}],
+	"subPackages": [{
+			// 信用卡包
+			"root": "pages/cc",
+			"pages": [{
+				"path": "ccList",
+				"style": {
+					"navigationBarTitleText": "信用卡管理"
+				}
+			}, {
+				"path": "ccApply",
+				"style": {
+					"navigationBarTitleText": "信用卡申请"
+				}
+			}, {
+				"path": "ccDetail",
+				"style": {
+					"navigationBarTitleText": "信用卡详细"
+				}
+			}, {
+				"path": "ccAdd",
+				"style": {
+					"navigationBarTitleText": "添加信用卡"
+				}
+			}]
+		},
+
+		{
+			"root": "pages/login",
+			"pages": [{
+					"path": "login",
+					"style": {
+						"navigationBarTitleText": "登录"
+					}
+				}, {
+					"path": "index",
+					"style": {
+						// #ifdef H5
+						"navigationStyle": "custom",
+						// #endif
+						"navigationBarTitleText": "推荐注册",
+						"navigationBarBackgroundColor": "#4587D5"
+					}
+				},
+				{
+					"path": "reg",
+					"style": {
+						"navigationBarTitleText": "注册"
+					}
+				},
+				{
+					"path": "success",
+					"style": {
+						"navigationBarTitleText": "提交成功"
+					}
+				}
+			]
+		},
+
+		{
+			"root": "pages/trade",
+			"pages": [{
+					"path": "trade",
+					"style": {
+						"navigationBarTitleText": "商户收款"
+					}
+				}, {
+					"path": "tradeHistory",
+					"style": {
+						"navigationBarTitleText": "收款记录",
+						"enablePullDownRefresh": true
+					}
+				}, {
+					"path": "tradeDetail",
+					"style": {
+						"navigationBarTitleText": "交易详情"
+					}
+				}
+			]
+		},
+
+		{
+			"root": "pages/user",
+			"pages": [{
+				"path": "user",
+				"style": {
+					// #ifdef H5
+					// "navigationStyle": "custom",
+					// #endif
+					"navigationBarTitleText": "我的"
+				}
+			}, {
+				"path": "promoCode",
+				"style": {
+
+					"navigationBarTitleText": "我的推广码"
+				}
+			}, {
+				"path": "userInfo",
+				"style": {
+					"navigationBarTitleText": "基本信息",
+					"app-plus": {
+						"titleNView": {
+							"buttons": [{
+								"btnType": "EDIT",
+								"text": "\ue901",
+								"fontSize": "20px",
+								"fontSrc": "/static/icomoon-local/fonts/icomoon.ttf"
+							}]
+						}
+					}
+				}
+			}, {
+				"path": "uUserInfo",
+				"style": {
+					"navigationBarTitleText": "修改结算卡"
+				}
+			}]
+		}
+	],
+	"condition": {
+		//模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式（list 的索引项）
+		"list": [{
+			"name": "首页", //模式名称
+			"path": "pages/main/main", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到。
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#fbf9fe"
+	}
+}
