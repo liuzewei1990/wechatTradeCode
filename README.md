@@ -1,4 +1,4 @@
-# converge-official-page
+# wechatTradeCode
 基于uni-app框架
 
 
@@ -13,13 +13,13 @@
 ## 注意事项
 * 页面初始化完毕后马上跳转页面可能会失败，可以尝试延迟执行
 
-##开发规范
+## 开发规范
 * 1.组件名以m做为前缀。
 * 2.在vue原型挂载对象，以$为前缀。
 * 3.scss预编译
 * 4.es6、Promise、async和await。
 
-##项目架构方案
+## 项目架构方案
 
 * 静态资源解决方案（图片、字体）；
 静态资源需要支持服务器地址或着本地地址配置，在config目录中新增assets.config.js文件，创建json对象，达到统一管理的目的，挂载到vue原型中$assets，所有页面通过this.$assets.imgKey访问图片url。css背景图片应尽量使用行内样式设置。
@@ -40,15 +40,19 @@
 场景：app入口控制，用户登陆。非页面自有方法。
 中心思想：类似小程序app.js
 
-* v-if在slot中慎用。
-组件中与slot内容若同时出现v-if，会导致slot内容里的元素样式不生效。仅在H5复现。
-
 * joy-page组件说明
 中心思想：组件代表一个page，可随意扩展，已扩展页面loading，网络异常重载操作。
 场景：每个页面按需求引入。页面内容通过slot渲染，loading通过props控制。
+
+## 采坑记录
+
+* v-if在slot中慎用。
+组件中与slot内容若同时出现v-if，会导致slot内容里的元素样式不生效。仅在H5复现。
 
 * 不支持在组件上定义样式类名，各端互不兼容。
 举例：<joy-page class="page"></joy-page> 其中page的样式在ios的app中不生效。
 
 * slot中使用v-for需要注意
 场景：在一个popup组件中，在slot中通过v-for渲染数据列表，非H5端会出现空白。详细问题见：[](http://ask.dcloud.net.cn/question/60743)
+
+* 点击popup中的列表某一项，选择后并关闭popup，在非H5端偶尔会出现关不掉的情况，暂未找到解决方案。
