@@ -4,7 +4,7 @@ const CONFIG = {
                 loginTitleTxt: "欢迎使用中付便民", // 登录页标题
                 copyrightTxt: "中付便民v1.0", // 版本信息
                 assetsPath: "http://liuup.com/img", // 静态资源路径
-                baseUrl: "http://easy-mock.liuup.com/mock/5c7d3b0f7f1dcc6ba7975f45/example",
+                baseUrl: "http://easy-mock.liuup.com/mock/5c7d3b167f1dcc6ba7975f4d/example",
                 tokenKey: "WECHAT_TRADE", // 登录标识
                 testOpenId: "oEjRxwy7jL9PgG0kWeb4VcDTZEas", // 小程序测试openId
                 forcedLogin: false, // touristMode游客模式下APP是否强制用户登录 场景：当用户进入登录页面后无法后退。
@@ -16,7 +16,7 @@ const CONFIG = {
                 loginTitleTxt: "欢迎使用中付便民", // 登录页标题
                 copyrightTxt: "中付便民v1.0", // 版本信息
                 assetsPath: "/static/img", // 静态资源路径
-                baseUrl: "http://easy-mock.liuup.com/mock/5c7d3b0f7f1dcc6ba7975f45/example",
+                baseUrl: "http://easy-mock.liuup.com/mock/5c7d3b167f1dcc6ba7975f4d/example",
                 tokenKey: "WECHAT_TRADE", // 登录标识
                 testOpenId: "oEjRxwy7jL9PgG0kWeb4VcDTZEas", // 小程序测试openId
                 forcedLogin: false, // touristMode游客模式下APP是否强制用户登录 场景：当用户进入登录页面后无法后退。

@@ -6,7 +6,7 @@
 	export default {
 		props: {
 			cardNo: {
-				type: String,
+				type: [String,Number],
 				default: ""
 			},
 

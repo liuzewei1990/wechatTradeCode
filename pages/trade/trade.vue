@@ -57,8 +57,8 @@
 			cradName() {
 				if (this.cc.bankName == undefined && this.cc.cardNo == undefined) return "选择支付卡";
 				let bankName = this.cc.bankName;
-				let cardNo = this.cc.cardNo.slice(this.cc.cardNo.length - 4, this.cc.cardNo.length);
-				return `${bankName}(${cardNo})`;
+				let cardNo = this.cc.cardNo+"";
+				return `${bankName}(${cardNo.slice(cardNo.length - 4, cardNo.length)})`;
 			},
 			btndis(){
 				return !(this.params.amount && this.cc.cardNo);

@@ -4,6 +4,7 @@
 
 ## 运行方式
 将项目拖入[HbuilderX](http://www.dcloud.io/hbuilderx.html),直接运行即可
+##注意：浏览器中访问请在url中带openId=123参数，登录的验证码为000000，项目接口都是mock数据。
 
 ## 特点
 * 兼容H5、微信小程序和安卓、ios
