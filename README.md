@@ -5,7 +5,7 @@
 ## 运行方式
 将项目拖入[HbuilderX](http://www.dcloud.io/hbuilderx.html),直接运行即可
 
-##项目访问说明
+## 项目访问说明
 * 浏览器中访问请在url中带openId=123参数，登录的验证码为000000，项目接口都是mock数据。
 * H5版在线地址：[http://liuup.com/converge-official-page/#/](http://liuup.com/converge-official-page/#/)
 
