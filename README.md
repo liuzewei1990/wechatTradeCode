@@ -8,7 +8,6 @@
 ## 项目访问说明
 * 浏览器中访问请在url中带openId=123参数，登录的验证码为000000，项目接口都是mock数据。
 * H5版在线地址：[http://liuup.com/converge-official-page/#/?openId=123](http://liuup.com/converge-official-page/#/?openId=123)
-* 另外本人寻求新的工作机会，3年前端开发，北京，微信：liuzeweio，日期：2019-4-22
 
 
 ## 特点
